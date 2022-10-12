@@ -1,7 +1,10 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+* {
+  flex-shrink: 0;
 }
 
 img {
@@ -13,6 +16,149 @@ img {
   display: flex;
   background-color: #1f2937;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  width: 1000px;
+  padding: 20px;
   color: white;
-  padding: 25px;
+  gap: 25px;
+}
+
+.header-logo {
+  flex: 1;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  align-self: center;
+  color: white;
+  font-size: 15px;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  background-color: #1f2937;
+  color: white;
+  gap: 50px;
+  padding: 100px 0px;
+}
+
+.left-section1 {
+  width: 550px;
+}
+
+#section1-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+#section1-text {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#section1-button {
+  background-color: #3882f6;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+}
+
+#section2-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.card {
+  max-width: 170px;
+  text-align: center;
+}
+
+.card-container img {
+  height: 170px;
+  width: 170px;
+  border-radius: 30px;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  margin-top: 100px;
+  padding: 100px 440px;
+}
+
+.section3 em {
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+.section3 div {
+  align-self: flex-end;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container {
+  display: flex;
+  background-color: #3882f6;
+  color: white;
+  padding: 30px 100px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  gap: 100px;
+  align-items: center;
+}
+
+.signup-container button {
+  padding: 10px 50px;
+  background-color: #3882f6;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.signup-container button:hover {
+  background-color: white;
+  color: #3882f6;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  background-color: #1f2937;
+  color: white;
 }
